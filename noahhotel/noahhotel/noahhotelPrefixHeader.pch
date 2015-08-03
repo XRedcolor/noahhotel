@@ -1,0 +1,15 @@
+//
+//  noahhotelPrefixHeader.pch
+//  noahhotel
+//
+//  Created by XRedcolor on 15/8/3.
+//  Copyright (c) 2015年 mirror. All rights reserved.
+//
+
+#ifndef noahhotel_noahhotelPrefixHeader_pch
+#define noahhotel_noahhotelPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
