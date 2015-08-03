@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		21EA45BF395F5BB2A28D7FD6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A4BC612AE33ED21C439C3C /* libPods.a */; };
+		3B6BF2341B6F746C00DC8C5B /* XRLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BF2331B6F746C00DC8C5B /* XRLogModel.m */; };
 		3BB74D0E1B6F47C8002FB127 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB74D0D1B6F47C8002FB127 /* main.m */; };
 		3BB74D111B6F47C8002FB127 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB74D101B6F47C8002FB127 /* AppDelegate.m */; };
 		3BB74D141B6F47C8002FB127 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB74D131B6F47C8002FB127 /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* Begin PBXFileReference section */
 		24A4BC612AE33ED21C439C3C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6BF2251B6F70E500DC8C5B /* noahhotelPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noahhotelPrefixHeader.pch; sourceTree = "<group>"; };
+		3B6BF2321B6F746C00DC8C5B /* XRLogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XRLogModel.h; path = Model/XRLogModel.h; sourceTree = "<group>"; };
+		3B6BF2331B6F746C00DC8C5B /* XRLogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XRLogModel.m; path = Model/XRLogModel.m; sourceTree = "<group>"; };
 		3BB74D081B6F47C8002FB127 /* noahhotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noahhotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB74D0C1B6F47C8002FB127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BB74D0D1B6F47C8002FB127 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +77,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3B6BF2351B6F747500DC8C5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B6BF2321B6F746C00DC8C5B /* XRLogModel.h */,
+				3B6BF2331B6F746C00DC8C5B /* XRLogModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3BB74CFF1B6F47C8002FB127 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +109,7 @@
 		3BB74D0A1B6F47C8002FB127 /* noahhotel */ = {
 			isa = PBXGroup;
 			children = (
+				3B6BF2351B6F747500DC8C5B /* Model */,
 				3BB74D0F1B6F47C8002FB127 /* AppDelegate.h */,
 				3BB74D101B6F47C8002FB127 /* AppDelegate.m */,
 				3BB74D121B6F47C8002FB127 /* ViewController.h */,
@@ -112,9 +125,9 @@
 		3BB74D0B1B6F47C8002FB127 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3B6BF2251B6F70E500DC8C5B /* noahhotelPrefixHeader.pch */,
 				3BB74D0C1B6F47C8002FB127 /* Info.plist */,
 				3BB74D0D1B6F47C8002FB127 /* main.m */,
-				3B6BF2251B6F70E500DC8C5B /* noahhotelPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -280,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B6BF2341B6F746C00DC8C5B /* XRLogModel.m in Sources */,
 				3BB74D141B6F47C8002FB127 /* ViewController.m in Sources */,
 				3BB74D111B6F47C8002FB127 /* AppDelegate.m in Sources */,
 				3BB74D0E1B6F47C8002FB127 /* main.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "XRLogModel.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,33 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // 日志系统初始化
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
+    [[DDTTYLogger sharedInstance] setLogFormatter:[[XRLogModel alloc] init]];
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor whiteColor]
+                                     backgroundColor:[UIColor redColor]
+                                             forFlag:DDLogFlagError];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor blackColor]
+                                     backgroundColor:[UIColor yellowColor]
+                                             forFlag:DDLogFlagWarning];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor blackColor]
+                                     backgroundColor:[UIColor greenColor]
+                                             forFlag:DDLogFlagInfo];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor whiteColor]
+                                     backgroundColor:[UIColor magentaColor]
+                                             forFlag:DDLogFlagDebug];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor blackColor]
+                                     backgroundColor:[UIColor cyanColor]
+                                             forFlag:DDLogFlagVerbose];
+    DDLogError(@"Error");
+    DDLogWarn(@"Warning");
+    DDLogInfo(@"Info");
+    DDLogDebug(@"Debug");
+    DDLogVerbose(@"Verbose");
+    
     return YES;
 }
 
