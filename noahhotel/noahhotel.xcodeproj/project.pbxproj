@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21EA45BF395F5BB2A28D7FD6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A4BC612AE33ED21C439C3C /* libPods.a */; };
 		3BB74D0E1B6F47C8002FB127 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB74D0D1B6F47C8002FB127 /* main.m */; };
 		3BB74D111B6F47C8002FB127 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB74D101B6F47C8002FB127 /* AppDelegate.m */; };
 		3BB74D141B6F47C8002FB127 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB74D131B6F47C8002FB127 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24A4BC612AE33ED21C439C3C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB74D081B6F47C8002FB127 /* noahhotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noahhotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB74D0C1B6F47C8002FB127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BB74D0D1B6F47C8002FB127 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		3BB74D211B6F47C8002FB127 /* noahhotelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = noahhotelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB74D261B6F47C8002FB127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BB74D271B6F47C8002FB127 /* noahhotelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = noahhotelTests.m; sourceTree = "<group>"; };
+		B3265CE7CDFC0E55EAAEF596 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E01D43E69D83CC42EA14DAC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EA45BF395F5BB2A28D7FD6 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222A72DE46C1EF5362DAAB54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24A4BC612AE33ED21C439C3C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3BB74CFF1B6F47C8002FB127 = {
 			isa = PBXGroup;
 			children = (
 				3BB74D0A1B6F47C8002FB127 /* noahhotel */,
 				3BB74D241B6F47C8002FB127 /* noahhotelTests */,
 				3BB74D091B6F47C8002FB127 /* Products */,
+				D6B880CA6FBC6C0D1C589946 /* Pods */,
+				222A72DE46C1EF5362DAAB54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +134,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D6B880CA6FBC6C0D1C589946 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E01D43E69D83CC42EA14DAC7 /* Pods.debug.xcconfig */,
+				B3265CE7CDFC0E55EAAEF596 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BB74D2B1B6F47C8002FB127 /* Build configuration list for PBXNativeTarget "noahhotel" */;
 			buildPhases = (
+				7858CE634936401B65D281CD /* Check Pods Manifest.lock */,
 				3BB74D041B6F47C8002FB127 /* Sources */,
 				3BB74D051B6F47C8002FB127 /* Frameworks */,
 				3BB74D061B6F47C8002FB127 /* Resources */,
+				3A1D1715977A9FB32D37D3BF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A1D1715977A9FB32D37D3BF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7858CE634936401B65D281CD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BB74D041B6F47C8002FB127 /* Sources */ = {
@@ -345,9 +404,11 @@
 		};
 		3BB74D2C1B6F47C8002FB127 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E01D43E69D83CC42EA14DAC7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = noahhotel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -355,9 +416,11 @@
 		};
 		3BB74D2D1B6F47C8002FB127 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3265CE7CDFC0E55EAAEF596 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = noahhotel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +479,7 @@
 				3BB74D2D1B6F47C8002FB127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BB74D2E1B6F47C8002FB127 /* Build configuration list for PBXNativeTarget "noahhotelTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +488,7 @@
 				3BB74D301B6F47C8002FB127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
