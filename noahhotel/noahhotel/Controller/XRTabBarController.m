@@ -8,6 +8,8 @@
 
 #import "XRTabBarController.h"
 
+#define ShowLoginNavigationController_Delay 0.5
+
 @interface XRTabBarController ()
 
 @end
@@ -16,22 +18,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self performSelector:@selector(showLoginNavigationController) withObject:nil afterDelay:ShowLoginNavigationController_Delay];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+/**
+ *  显示登录界面
+ */
+- (void)showLoginNavigationController
+{
+    UIStoryboard *userLoginStoryboard = [UIStoryboard storyboardWithName:UserLogin_Storyboard_Name bundle:[NSBundle mainBundle]];
+    id LoginNavigationControllerTemp = [userLoginStoryboard instantiateViewControllerWithIdentifier:LoginNavigationController_Storyboard_ID];
+    
+    if ([LoginNavigationControllerTemp isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *LoginNavigationController = (UINavigationController *)LoginNavigationControllerTemp;
+        [self presentViewController:LoginNavigationController animated:YES completion:nil];
+    }
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

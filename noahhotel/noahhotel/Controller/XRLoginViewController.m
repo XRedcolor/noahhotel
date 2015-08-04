@@ -1,18 +1,18 @@
 //
-//  LoginViewController.m
+//  XRLoginViewController.m
 //  noahhotel
 //
 //  Created by XRedcolor on 15/8/4.
 //  Copyright (c) 2015年 mirror. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "XRLoginViewController.h"
 
-@interface LoginViewController ()
+@interface XRLoginViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation XRLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

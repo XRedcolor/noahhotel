@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  XRLoginViewController.h
 //  noahhotel
 //
 //  Created by XRedcolor on 15/8/4.
@@ -8,6 +8,6 @@
 
 #import "XRBaseViewController.h"
 
-@interface LoginViewController : XRBaseViewController
+@interface XRLoginViewController : XRBaseViewController
 
 @end
