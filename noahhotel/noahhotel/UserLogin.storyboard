@@ -70,6 +70,9 @@
                                     <color key="titleColor" red="0.95686274509803915" green="0.27843137254901962" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4Xe-Bi-6FH" kind="push" id="uUl-9Y-qjZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z71-Av-hZu">
                                 <rect key="frame" x="28" y="332" width="544" height="30"/>
@@ -78,6 +81,20 @@
                                     <color key="titleColor" red="0.95686274509803915" green="0.27843137254901962" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9t-uG-ijC">
+                                <rect key="frame" x="40" y="234" width="73" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="3xg-gv-9au"/>
+                                    <constraint firstAttribute="height" constant="20" id="b3Z-GT-yVl"/>
+                                </constraints>
+                                <state key="normal" title="忘记密码 ?">
+                                    <color key="titleColor" red="0.58431372549019611" green="0.58431372549019611" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7hg-qO-Pm3" kind="push" id="nti-gA-cNg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,9 +110,11 @@
                             <constraint firstItem="6aO-vc-kHA" firstAttribute="width" secondItem="Ygc-cy-LLS" secondAttribute="width" id="Spb-kd-0YG"/>
                             <constraint firstItem="7SH-CS-KUN" firstAttribute="width" secondItem="8fD-um-J4E" secondAttribute="width" id="XJT-5t-jyB"/>
                             <constraint firstItem="6aO-vc-kHA" firstAttribute="leading" secondItem="VIb-Qc-D5V" secondAttribute="leading" constant="28" id="XSd-ob-cxY"/>
+                            <constraint firstItem="G9t-uG-ijC" firstAttribute="leading" secondItem="7SH-CS-KUN" secondAttribute="leading" constant="12" id="YMv-Zo-37d"/>
                             <constraint firstItem="8fD-um-J4E" firstAttribute="height" secondItem="z71-Av-hZu" secondAttribute="height" id="baA-Ih-QPQ"/>
                             <constraint firstItem="6aO-vc-kHA" firstAttribute="centerX" secondItem="7SH-CS-KUN" secondAttribute="centerX" id="e6a-rt-IbS"/>
                             <constraint firstItem="z71-Av-hZu" firstAttribute="top" secondItem="8fD-um-J4E" secondAttribute="bottom" constant="12" id="exD-Pw-jSy"/>
+                            <constraint firstItem="G9t-uG-ijC" firstAttribute="top" secondItem="7SH-CS-KUN" secondAttribute="bottom" constant="8" id="iGB-g2-zFQ"/>
                             <constraint firstAttribute="trailing" secondItem="6aO-vc-kHA" secondAttribute="trailing" constant="28" id="jWk-Jf-ogp"/>
                             <constraint firstItem="7SH-CS-KUN" firstAttribute="height" secondItem="8fD-um-J4E" secondAttribute="height" id="mpo-JE-DIQ"/>
                             <constraint firstItem="8fD-um-J4E" firstAttribute="width" secondItem="z71-Av-hZu" secondAttribute="width" id="tYc-Zk-faL"/>
@@ -108,7 +127,7 @@
             </objects>
             <point key="canvasLocation" x="641" y="316"/>
         </scene>
-        <!--View Controller-->
+        <!--注册-->
         <scene sceneID="iDk-m4-Bmf">
             <objects>
                 <viewController id="4Xe-Bi-6FH" sceneMemberID="viewController">
@@ -121,13 +140,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oHv-Jx-MX6"/>
+                    <navigationItem key="navigationItem" title="注册" id="oHv-Jx-MX6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ds-fT-dSC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1592" y="944"/>
         </scene>
-        <!--View Controller-->
+        <!--忘记密码-->
         <scene sceneID="m8t-HJ-eby">
             <objects>
                 <viewController id="7hg-qO-Pm3" sceneMemberID="viewController">
@@ -140,7 +159,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="FSV-x6-Q7y"/>
+                    <navigationItem key="navigationItem" title="忘记密码" id="FSV-x6-Q7y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hiO-Ih-AT3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,42 +182,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Lw-I9-wIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-844" y="311"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="vVk-WS-NOT">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vkm-mk-DB7" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="32C-WT-Yx1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="4Xe-Bi-6FH" kind="relationship" relationship="rootViewController" id="Pep-Sv-Dm0"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PY5-45-tyG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-32" y="944"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="qUT-sJ-LMu">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3YJ-vH-hvH" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xHn-bq-Kcl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="7hg-qO-Pm3" kind="relationship" relationship="rootViewController" id="aJn-nJ-2fs"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JUI-O6-YSj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="780" y="1577"/>
         </scene>
     </scenes>
 </document>
