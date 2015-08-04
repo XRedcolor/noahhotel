@@ -15,6 +15,7 @@
 		3BB74D191B6F47C8002FB127 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB74D181B6F47C8002FB127 /* Images.xcassets */; };
 		3BB74D1C1B6F47C8002FB127 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BB74D1A1B6F47C8002FB127 /* LaunchScreen.xib */; };
 		3BB74D281B6F47C8002FB127 /* noahhotelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB74D271B6F47C8002FB127 /* noahhotelTests.m */; };
+		3BBA83671B705915009BEF18 /* XRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA83661B705915009BEF18 /* XRTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		3BB74D211B6F47C8002FB127 /* noahhotelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = noahhotelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB74D261B6F47C8002FB127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BB74D271B6F47C8002FB127 /* noahhotelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = noahhotelTests.m; sourceTree = "<group>"; };
+		3BBA83651B705915009BEF18 /* XRTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XRTabBarController.h; path = Controller/XRTabBarController.h; sourceTree = "<group>"; };
+		3BBA83661B705915009BEF18 /* XRTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XRTabBarController.m; path = Controller/XRTabBarController.m; sourceTree = "<group>"; };
 		B3265CE7CDFC0E55EAAEF596 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E01D43E69D83CC42EA14DAC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +109,7 @@
 		3BB74D0A1B6F47C8002FB127 /* noahhotel */ = {
 			isa = PBXGroup;
 			children = (
+				3BBA83681B70591E009BEF18 /* Controller */,
 				3B6BF2351B6F747500DC8C5B /* Model */,
 				3BB74D0F1B6F47C8002FB127 /* AppDelegate.h */,
 				3BB74D101B6F47C8002FB127 /* AppDelegate.m */,
@@ -142,6 +146,15 @@
 				3BB74D261B6F47C8002FB127 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BBA83681B70591E009BEF18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3BBA83651B705915009BEF18 /* XRTabBarController.h */,
+				3BBA83661B705915009BEF18 /* XRTabBarController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		D6B880CA6FBC6C0D1C589946 /* Pods */ = {
@@ -289,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B6BF2341B6F746C00DC8C5B /* XRLogModel.m in Sources */,
+				3BBA83671B705915009BEF18 /* XRTabBarController.m in Sources */,
 				3BB74D111B6F47C8002FB127 /* AppDelegate.m in Sources */,
 				3BB74D0E1B6F47C8002FB127 /* main.m in Sources */,
 			);
