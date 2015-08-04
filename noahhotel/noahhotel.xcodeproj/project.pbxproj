@@ -18,6 +18,7 @@
 		3BBA83671B705915009BEF18 /* XRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA83661B705915009BEF18 /* XRTabBarController.m */; };
 		3BBA836A1B705E97009BEF18 /* UserLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBA83691B705E97009BEF18 /* UserLogin.storyboard */; };
 		3BBA836E1B7060C3009BEF18 /* XRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA836D1B7060C3009BEF18 /* XRBaseViewController.m */; };
+		3BBA83751B7061F1009BEF18 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA83741B7061F1009BEF18 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		3BBA83691B705E97009BEF18 /* UserLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserLogin.storyboard; sourceTree = "<group>"; };
 		3BBA836C1B7060C3009BEF18 /* XRBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XRBaseViewController.h; path = BaseController/XRBaseViewController.h; sourceTree = "<group>"; };
 		3BBA836D1B7060C3009BEF18 /* XRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XRBaseViewController.m; path = BaseController/XRBaseViewController.m; sourceTree = "<group>"; };
+		3BBA83731B7061F1009BEF18 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Controller/LoginViewController.h; sourceTree = "<group>"; };
+		3BBA83741B7061F1009BEF18 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Controller/LoginViewController.m; sourceTree = "<group>"; };
 		B3265CE7CDFC0E55EAAEF596 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E01D43E69D83CC42EA14DAC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +162,8 @@
 			children = (
 				3BBA83651B705915009BEF18 /* XRTabBarController.h */,
 				3BBA83661B705915009BEF18 /* XRTabBarController.m */,
+				3BBA83731B7061F1009BEF18 /* LoginViewController.h */,
+				3BBA83741B7061F1009BEF18 /* LoginViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -166,8 +171,8 @@
 		3BBA836B1B705EA3009BEF18 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				3BBA83691B705E97009BEF18 /* UserLogin.storyboard */,
 				3BB74D151B6F47C8002FB127 /* Main.storyboard */,
+				3BBA83691B705E97009BEF18 /* UserLogin.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 			files = (
 				3B6BF2341B6F746C00DC8C5B /* XRLogModel.m in Sources */,
 				3BBA83671B705915009BEF18 /* XRTabBarController.m in Sources */,
+				3BBA83751B7061F1009BEF18 /* LoginViewController.m in Sources */,
 				3BB74D111B6F47C8002FB127 /* AppDelegate.m in Sources */,
 				3BB74D0E1B6F47C8002FB127 /* main.m in Sources */,
 				3BBA836E1B7060C3009BEF18 /* XRBaseViewController.m in Sources */,
